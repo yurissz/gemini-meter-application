@@ -1,0 +1,24 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://database-desafio-tecnico-shopper.com.br_owner:spZ7DdCFmT9w@ep-dark-river-a53qqtcb-pooler.us-east-2.aws.neon.tech/database-desafio-tecnico-shopper.com.br?sslmode=require"
+}
+
+model Measures {
+  measure_uuid           String   @unique
+  measure_datetime       DateTime
+  measure_type           String
+  has_confirmed          Boolean
+  image_url              String
+  customer_code          String
+  measure_datatime_month Int
+}
