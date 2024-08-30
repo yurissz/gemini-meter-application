@@ -8,6 +8,8 @@ export const listController = async (req: Request, res: Response) => {
     const prisma = new PrismaClient()
     let measures: IMeasure[] | [] = []
     let measureResponse: IMeasureResponse[]
+    console.log(prisma);
+
 
     try {
 
