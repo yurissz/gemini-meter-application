@@ -36,7 +36,7 @@
 
 ![image](https://github.com/user-attachments/assets/abb948d2-bb26-4a41-8d06-4eb448ec49e0)
 
-## :pushpin: GET //<customer code>/list
+## :pushpin: GET /<customer code>/list
 ### Responsável por listar as medidas realizadas por um determinado cliente. Esse endpoint:
 - Receber o código do cliente e filtrar as medidas realizadas por ele
 - Ele opcionalmente pode receber um query parameter “measure_type”, que
