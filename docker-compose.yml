@@ -2,7 +2,6 @@ services:
   backend:
     container_name: backend
     build:
-      # Remove 'image' e certifique-se de que a imagem será construída localmente
       context: .
       dockerfile: Dockerfile
     ports:
